@@ -1,0 +1,49 @@
+.home-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 20%;
+    margin-top: 12%;
+}
+
+.home-title{
+    width: 45%;
+    font-size: 100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.home-title em{
+    font-size: 100px;
+    margin-left: 2%;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+}
+
+.home-container h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: -3%;
+}
+
+.home-intro img{
+    width: 25%;
+    border-radius: 50%;
+}
+
+.home-intro{
+    display: flex;
+    flex-direction: row;
+}
+
+.home-container button{
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 28%;
+    width: 12%;
+    background-color: black;
+    border-radius: 50px;
+}
+
+.home-container button:hover{
+    background-color: rgb(75, 74, 74);
+}

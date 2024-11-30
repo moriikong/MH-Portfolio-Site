@@ -1,0 +1,19 @@
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    margin-top: 3%;
+}
+
+.contact-container h1{
+    font-size: 50px;
+    border-bottom: 3px dotted rgb(171, 175, 164);
+    width: 20%;
+}
+
+.contact-container h2{
+    margin-left: 5%;
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
