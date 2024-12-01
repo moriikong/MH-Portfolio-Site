@@ -37,7 +37,7 @@
 .img-container img{
     width: 10%;
     background-color: aliceblue;
-    border-radius: 18px;
+    border-radius: 16px;
     padding: 10px;
     margin: 10px;
 }
@@ -45,6 +45,6 @@
 .sidebar-container h5{
     font-size: 12px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 40px;
-    margin-left: 10%;
+    margin-top: 120px;
+    margin-inline: 10%;
  }
