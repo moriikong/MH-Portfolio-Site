@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download</title>
+</head>
+<body>
+    <button id="downloadresume">Resume</button>
+
+    <script>
+        document.getElementById('downloadresume').addEventListener('click', () => {
+            // Define the dynamic content of the file
+            const fileContent = "KMH's Resume";
+            
+            // Create a Blob from the content
+            const blob = new Blob([fileContent], { type: 'text/plain' });
+
+            // Create a temporary URL for the Blob
+            const url = URL.createObjectURL(blob);
+
+            // Create an <a> element to trigger the download
+            const anchor = document.createElement('a');
+            anchor.href = url;
+            anchor.download = 'resume.pdf';  // Set the desired file name
+            document.body.appendChild(anchor);
+            anchor.click();  // Programmatically click the link to trigger download
+            anchor.remove();  // Clean up by removing the temporary anchor
+
+            // Revoke the Blob URL after download is triggered
+            URL.revokeObjectURL(url);
+        });
+    </script>
+</body>
+</html>

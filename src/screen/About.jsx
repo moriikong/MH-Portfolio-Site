@@ -3,6 +3,17 @@ import pp from "../assets/photo2.jpg"
 import ml from "../assets/ml.svg"
 import da from "../assets/da.svg"
 import InterestCard from "../component/InterestCard"
+import resume from "../assets/Resume.pdf"
+
+function downloadPDF() {
+    const fileUrl = resume; // Path to the file in the public folder
+    const anchor = document.createElement('a');
+    anchor.href = fileUrl;
+    anchor.download = 'Resume.pdf'; // Desired file name for the download
+    document.body.appendChild(anchor);
+    anchor.click();  // Programmatically click the anchor to trigger download
+    anchor.remove();  // Remove the anchor after the click
+}
 
 function About(){
     return(
@@ -21,7 +32,7 @@ function About(){
                     </h2>
                 </div>
 
-                <button>
+                <button onClick={downloadPDF}>
                     Resume
                 </button>
             </div>
